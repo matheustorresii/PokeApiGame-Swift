@@ -19,14 +19,16 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    adventureTile = Float(adventure.frame.width)/8.2
+    adventureTile = Float(adventure.frame.width)/8
     playerX = player.frame.origin.x
     playerY = player.frame.origin.y
   }
 
   @IBAction func goUp(_ sender: Any) {
     player.image = UIImage(named: "up")
+    if playerY < CGFloat(adventureTile * 2) {
+      return
+    }
     player.frame.origin = CGPoint(
       x: playerX,
       y: playerY - CGFloat(adventureTile)
@@ -37,6 +39,9 @@ class ViewController: UIViewController {
   
   @IBAction func goDown(_ sender: Any) {
     player.image = UIImage(named: "down")
+    if playerY > CGFloat(adventureTile * 6) {
+      return
+    }
     player.frame.origin = CGPoint(
       x: playerX,
       y: playerY + CGFloat(adventureTile)
@@ -47,6 +52,9 @@ class ViewController: UIViewController {
   
   @IBAction func goLeft(_ sender: Any) {
     player.image = UIImage(named: "left")
+    if playerX < CGFloat(adventureTile) {
+      return
+    }
     player.frame.origin = CGPoint(
       x: playerX - CGFloat(adventureTile),
       y: playerY
@@ -57,6 +65,9 @@ class ViewController: UIViewController {
   
   @IBAction func goRight(_ sender: Any) {
     player.image = UIImage(named: "right")
+    if playerX > CGFloat(adventureTile * 6) {
+      return
+    }
     player.frame.origin = CGPoint(
       x: playerX + CGFloat(adventureTile),
       y: playerY

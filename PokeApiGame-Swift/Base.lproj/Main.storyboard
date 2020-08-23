@@ -24,15 +24,17 @@
                                             <constraint firstAttribute="width" secondItem="N20-31-ZIg" secondAttribute="height" multiplier="1:1" id="Lnh-8P-Mpj"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="down" translatesAutoresizingMaskIntoConstraints="NO" id="fwY-Fu-2QZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="51" height="73"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down" translatesAutoresizingMaskIntoConstraints="NO" id="fwY-Fu-2QZ">
+                                        <rect key="frame" x="161" y="185.5" width="52" height="83"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="fwY-Fu-2QZ" firstAttribute="centerY" secondItem="NcC-6A-8bg" secondAttribute="centerY" constant="20" id="5VG-Nj-t6W"/>
+                                    <constraint firstItem="fwY-Fu-2QZ" firstAttribute="centerX" secondItem="NcC-6A-8bg" secondAttribute="centerX" constant="-20" id="8as-bf-3jF"/>
                                     <constraint firstAttribute="trailing" secondItem="N20-31-ZIg" secondAttribute="trailing" id="DHz-jc-IvD"/>
                                     <constraint firstItem="N20-31-ZIg" firstAttribute="top" secondItem="NcC-6A-8bg" secondAttribute="top" id="Tr6-Op-1UT"/>
-                                    <constraint firstItem="fwY-Fu-2QZ" firstAttribute="height" secondItem="N20-31-ZIg" secondAttribute="height" multiplier="0.15" id="YKg-1C-gmk"/>
+                                    <constraint firstItem="fwY-Fu-2QZ" firstAttribute="height" secondItem="N20-31-ZIg" secondAttribute="height" multiplier="0.2" id="YKg-1C-gmk"/>
                                     <constraint firstItem="fwY-Fu-2QZ" firstAttribute="width" secondItem="N20-31-ZIg" secondAttribute="width" multiplier="0.125" id="hZP-Se-PMs"/>
                                     <constraint firstItem="N20-31-ZIg" firstAttribute="leading" secondItem="NcC-6A-8bg" secondAttribute="leading" id="naW-mR-BUq"/>
                                     <constraint firstAttribute="bottom" secondItem="N20-31-ZIg" secondAttribute="bottom" id="yar-zn-n4P"/>
