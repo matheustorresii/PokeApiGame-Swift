@@ -25,7 +25,7 @@
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="down" translatesAutoresizingMaskIntoConstraints="NO" id="fwY-Fu-2QZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="51" height="86"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="73"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -34,6 +34,7 @@
                                     <constraint firstItem="fwY-Fu-2QZ" firstAttribute="width" secondItem="N20-31-ZIg" secondAttribute="width" multiplier="0.125" id="EC1-vQ-Pjn"/>
                                     <constraint firstItem="N20-31-ZIg" firstAttribute="top" secondItem="NcC-6A-8bg" secondAttribute="top" id="Tr6-Op-1UT"/>
                                     <constraint firstItem="N20-31-ZIg" firstAttribute="leading" secondItem="NcC-6A-8bg" secondAttribute="leading" id="naW-mR-BUq"/>
+                                    <constraint firstItem="fwY-Fu-2QZ" firstAttribute="height" secondItem="N20-31-ZIg" secondAttribute="height" multiplier="0.2" id="w7Y-Wn-b1P"/>
                                     <constraint firstAttribute="bottom" secondItem="N20-31-ZIg" secondAttribute="bottom" id="yar-zn-n4P"/>
                                 </constraints>
                             </view>
@@ -51,6 +52,9 @@
                                             <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="capture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4cx-dQ-WuE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5c5-X4-vBO">
                                         <rect key="frame" x="172" y="87" width="70" height="70"/>
@@ -64,6 +68,9 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="goUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YbX-5z-3iM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gox-Ox-atS">
                                         <rect key="frame" x="172" y="227" width="70" height="70"/>
@@ -76,6 +83,9 @@
                                         <state key="normal" title="\/">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="goDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e6H-ai-8tg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixz-rB-kMx">
                                         <rect key="frame" x="242" y="157" width="70" height="70"/>
@@ -88,6 +98,10 @@
                                         <state key="normal" title="&gt;">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="goLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="56G-4c-gaP"/>
+                                            <action selector="goRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b1V-OJ-hVz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81y-Uh-ouA">
                                         <rect key="frame" x="102" y="157" width="70" height="70"/>
@@ -100,6 +114,9 @@
                                         <state key="normal" title="&lt;">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="goLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FqC-Ji-nRE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -132,7 +149,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="player" destination="fwY-Fu-2QZ" id="ork-XE-gnV"/>
+                        <outlet property="adventure" destination="N20-31-ZIg" id="wqY-Uz-Q6P"/>
+                        <outlet property="player" destination="fwY-Fu-2QZ" id="Srk-mp-Gpf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
