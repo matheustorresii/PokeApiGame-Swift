@@ -27,6 +27,9 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down" translatesAutoresizingMaskIntoConstraints="NO" id="fwY-Fu-2QZ">
                                         <rect key="frame" x="161" y="185.5" width="52" height="83"/>
                                     </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bO1-Ja-6Ob">
+                                        <rect key="frame" x="124" y="124" width="166" height="166"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -35,8 +38,12 @@
                                     <constraint firstAttribute="trailing" secondItem="N20-31-ZIg" secondAttribute="trailing" id="DHz-jc-IvD"/>
                                     <constraint firstItem="N20-31-ZIg" firstAttribute="top" secondItem="NcC-6A-8bg" secondAttribute="top" id="Tr6-Op-1UT"/>
                                     <constraint firstItem="fwY-Fu-2QZ" firstAttribute="height" secondItem="N20-31-ZIg" secondAttribute="height" multiplier="0.2" id="YKg-1C-gmk"/>
+                                    <constraint firstItem="bO1-Ja-6Ob" firstAttribute="centerX" secondItem="NcC-6A-8bg" secondAttribute="centerX" id="eXo-2P-Fnk"/>
+                                    <constraint firstItem="bO1-Ja-6Ob" firstAttribute="height" secondItem="N20-31-ZIg" secondAttribute="height" multiplier="0.4" id="gTa-ii-2rv"/>
                                     <constraint firstItem="fwY-Fu-2QZ" firstAttribute="width" secondItem="N20-31-ZIg" secondAttribute="width" multiplier="0.125" id="hZP-Se-PMs"/>
+                                    <constraint firstItem="bO1-Ja-6Ob" firstAttribute="centerY" secondItem="NcC-6A-8bg" secondAttribute="centerY" id="k7D-Gz-XQK"/>
                                     <constraint firstItem="N20-31-ZIg" firstAttribute="leading" secondItem="NcC-6A-8bg" secondAttribute="leading" id="naW-mR-BUq"/>
+                                    <constraint firstItem="bO1-Ja-6Ob" firstAttribute="width" secondItem="N20-31-ZIg" secondAttribute="width" multiplier="0.4" id="x4T-SY-cvB"/>
                                     <constraint firstAttribute="bottom" secondItem="N20-31-ZIg" secondAttribute="bottom" id="yar-zn-n4P"/>
                                 </constraints>
                             </view>
@@ -119,13 +126,22 @@
                                             <action selector="goRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pbY-re-TJ2"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Pokemon:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbg-V5-jxe">
+                                        <rect key="frame" x="0.0" y="5" width="414" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qbg-V5-jxe" secondAttribute="trailing" id="2dm-Lo-WPE"/>
+                                    <constraint firstItem="qbg-V5-jxe" firstAttribute="top" secondItem="4mY-tM-kMP" secondAttribute="top" constant="5" id="4k3-TR-0Kl"/>
                                     <constraint firstItem="81y-Uh-ouA" firstAttribute="centerY" secondItem="4mY-tM-kMP" secondAttribute="centerY" id="92c-0T-ppu"/>
                                     <constraint firstItem="hH4-lS-Xc0" firstAttribute="leading" secondItem="GZD-WP-MK6" secondAttribute="trailing" id="C2N-bX-0d0"/>
                                     <constraint firstItem="GZD-WP-MK6" firstAttribute="leading" secondItem="81y-Uh-ouA" secondAttribute="trailing" id="CTD-2B-VxZ"/>
                                     <constraint firstItem="GZD-WP-MK6" firstAttribute="centerX" secondItem="4mY-tM-kMP" secondAttribute="centerX" id="ECo-Hk-RhE"/>
+                                    <constraint firstItem="qbg-V5-jxe" firstAttribute="centerX" secondItem="4mY-tM-kMP" secondAttribute="centerX" id="IVQ-dw-KA6"/>
                                     <constraint firstItem="Gox-Ox-atS" firstAttribute="top" secondItem="GZD-WP-MK6" secondAttribute="bottom" id="Kxr-XZ-ub8"/>
                                     <constraint firstItem="5c5-X4-vBO" firstAttribute="centerX" secondItem="4mY-tM-kMP" secondAttribute="centerX" id="N95-Kj-GPT"/>
                                     <constraint firstItem="81y-Uh-ouA" firstAttribute="centerY" secondItem="4mY-tM-kMP" secondAttribute="centerY" id="UPX-2Y-sW5"/>
@@ -133,6 +149,7 @@
                                     <constraint firstItem="hH4-lS-Xc0" firstAttribute="centerY" secondItem="4mY-tM-kMP" secondAttribute="centerY" id="aW7-sY-FLV"/>
                                     <constraint firstItem="GZD-WP-MK6" firstAttribute="centerY" secondItem="4mY-tM-kMP" secondAttribute="centerY" id="blF-iF-aKP"/>
                                     <constraint firstItem="Gox-Ox-atS" firstAttribute="centerX" secondItem="4mY-tM-kMP" secondAttribute="centerX" id="lTs-OP-kSW"/>
+                                    <constraint firstItem="qbg-V5-jxe" firstAttribute="leading" secondItem="4mY-tM-kMP" secondAttribute="leading" id="s6a-BW-yFo"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -151,7 +168,9 @@
                     </view>
                     <connections>
                         <outlet property="adventure" destination="N20-31-ZIg" id="wqY-Uz-Q6P"/>
+                        <outlet property="lastPokemonLabel" destination="qbg-V5-jxe" id="cDq-JA-eeA"/>
                         <outlet property="player" destination="fwY-Fu-2QZ" id="Srk-mp-Gpf"/>
+                        <outlet property="pokemonImage" destination="bO1-Ja-6Ob" id="niq-jG-O9F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
